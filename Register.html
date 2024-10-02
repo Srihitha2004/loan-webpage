@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Loan Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding-top: 20px;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .form-section {
+            flex: 1;
+            min-width: 300px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color:#1CBBB3;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .submit-container {
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        input[type="submit"] {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #1c86ee;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <div class="form-section">
+        
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <th colspan="2">Personal Information</th>
+                </tr>
+                <tr>
+                    <td><label for="fname">Full Name:</label></td>
+                    <td><input type="text" id="fname" name="fname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="spouse_name">Father/Spouse Name:</label></td>
+                    <td><input type="text" id="spouse_name" name="spouse_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="pan">PAN:</label></td>
+                    <td><input type="text" id="pan" name="pan" required></td>
+                </tr>
+                <tr>
+                    <td><label for="aadhaar">Aadhaar:</label></td>
+                    <td><input type="text" id="aadhaar" name="aadhaar" required></td>
+                </tr>
+            </table>
+    </div>
+
+    <div class="form-section">
+        <table>
+            <tr>
+                <th colspan="2">Financial Information</th>
+            </tr>
+            <tr>
+                <td><label for="annual_income">Annual Income:</label></td>
+                <td><input type="number" id="annual_income" name="annual_income" required></td>
+            </tr>
+            <tr>
+                <td><label for="total_experience">Total Experience (years):</label></td>
+                <td><input type="number" id="total_experience" name="total_experience" required></td>
+            </tr>
+            <tr>
+                <td><label for="field_experience">Current Field Experience (years):</label></td>
+                <td><input type="number" id="field_experience" name="field_experience" required></td>
+            </tr>
+            <tr>
+                <td><label for="current_loans">Current Loans:</label></td>
+                <td><input type="text" id="current_loans" name="current_loans" required></td>
+            </tr>
+            <tr>
+                <td><label for="emi">Current Loans EMI:</label></td>
+                <td><input type="number" id="emi" name="emi" required></td>
+            </tr>
+            <tr>
+                <td><label for="repayment_status">Current Loans Repayment Status (past 1 year):</label></td>
+                <td><input type="text" id="repayment_status" name="repayment_status" required></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form-section">
+        <table>
+            <tr>
+                <th colspan="2">Family Information</th>
+            </tr>
+            <tr>
+                <td><label for="family_members">Total Family Members:</label></td>
+                <td><input type="number" id="family_members" name="family_members" required></td>
+            </tr>
+            <tr>
+                <td><label for="earning_members">Earning Members in Family:</label></td>
+                <td><input type="number" id="earning_members" name="earning_members" required></td>
+            </tr>
+            <tr>
+                <th colspan="2">Assets Information</th>
+            </tr>
+            <tr>
+                <td><label for="assets_number">Existing Assets (in number):</label></td>
+                <td><input type="number" id="assets_number" name="assets_number" required></td>
+            </tr>
+            <tr>
+                <td><label for="assets_value">Existing Assets Value:</label></td>
+                <td><input type="number" id="assets_value" name="assets_value" required></td>
+            </tr>
+        </table>
+        <div class="submit-container">
+            <input type="submit" value="Next">
+        </div>
+    </div>
+        </form>
+</div>
+
+</body>
+</html>
